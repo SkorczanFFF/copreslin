@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ZAMÓW - Copreslin - Recruitment task</title>
+  </head>
+  <body>
+    <div
+      class="h-[700px] flex items-center flex-col bg-[url('/img/bg-order.jpg')] object-scale-down bg-[left_calc(50%)_top_calc(0%)] object-contain"
+    >
+      <nav
+        class="w-full xl:w-[1160px] h-[50px] flex mt-[30px] xl:mt-[50px] items-center"
+      >
+        <img
+          src="/img/toggle-btn.png"
+          alt="Hamburger menu"
+          class="block xl:hidden ml-4"
+        />
+        <img
+          class="w-[208px] h-[42px] absolute xl:static left-1/2 transform -translate-x-1/2 xl:left-0 xl:-translate-x-0"
+          src="/img/logo.svg"
+          alt="Copreslin logo"
+        />
+        <div class="hidden xl:flex flex-col xl:flex-row w-full h-full">
+          <ul
+            class="xl:flex justify-between w-full mx-[20px] items-center text-white text-[20px] mt-2"
+          >
+            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+              COPRESLIN
+            </li>
+            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+              BĄDŹ FIT
+            </li>
+            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+              JEDYNY TAKI
+            </li>
+            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+              WARTO OBSERWOWAĆ
+            </li>
+          </ul>
+          <a
+            href="/order.html"
+            class="min-w-[277px] h-full text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] hover:brightness-150 duration-100 drop-shadow-[0_4px_13px_#FF3103B3] flex items-center justify-center"
+          >
+            ZAMÓW
+          </a>
+        </div>
+      </nav>
+      <div class="flex flex-col items-center mt-[115px]">
+        <h1
+          class="font-[700] text-[48px] text-[#FFC42B] italic mb-3 drop-shadow-[0_4px_4px_#00000040]"
+        >
+          Formularz zamówienia
+        </h1>
+        <form class="flex flex-col items-end w-[580px]">
+          <div class="flex flex-col gap-4 -ml-[150px]">
+            <div class="flex">
+              <label
+                for="name"
+                class="text-white text-end leading-5 font-[700] text-[18px] mr-2 w-[140px] drop-shadow-[0_4px_4px_#00000040]"
+                >Imię i nzwisko / Firma</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-[580px] h-[40px] rounded-[2px] px-2"
+              />
+            </div>
+            <div class="flex items-center">
+              <label
+                for="address"
+                class="text-white text-end leading-5 font-[700] text-[18px] mr-2 w-[140px] drop-shadow-[0_4px_4px_#00000040]"
+                >Adres</label
+              >
+              <input
+                type="text"
+                id="address"
+                class="w-[580px] h-[40px] rounded-[2px] px-2"
+              />
+            </div>
+            <div class="flex items-center">
+              <label
+                for="email"
+                class="text-white text-end leading-5 font-[700] text-[18px] mr-2 w-[140px] drop-shadow-[0_4px_4px_#00000040]"
+                >E-mail</label
+              >
+              <input
+                type="text"
+                id="address"
+                class="w-[580px] h-[40px] rounded-[2px] px-2"
+              />
+            </div>
+            <div class="flex items-center">
+              <label
+                for="phone"
+                class="text-white text-end leading-5 font-[700] text-[18px] mr-2 w-[140px] drop-shadow-[0_4px_4px_#00000040]"
+                >Adres</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                class="w-[580px] h-[40px] rounded-[2px]"
+              />
+            </div>
+          </div>
+          <a
+            href="/order.html"
+            class="w-[580px] h-[49px] text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] hover:brightness-150 duration-100 drop-shadow-[0_4px_13px_#FF3103B3] flex items-center justify-center mt-8"
+          >
+            ZAMÓW
+          </a>
+        </form>
+      </div>
+    </div>
+
+    <footer
+      class="flex flex-col items-center border-t-[2px] border-[#ffae34] text-white bg-[#191919] py-10 px-4"
+    >
+      <div class="max-w-[1410px] flex items-center flex-col">
+        <img src="/img/logo.svg" alt="COPRESLIN logo" class="mb-5" />
+        <p class="text-center italic text-[16px] text-[#8B8B8B] mb-5">
+          *Produkt na tej stronie nie ma właściwości leczniczych. Przed użyciem
+          należy zapoznać się z instrukcją i stosować urządzenie zgodnie z nią.
+          Produkt nie jest objęty gwarancja osiągnięcia prezentowanych
+          rezultatów. Działanie urządzenia jest kwestią indywidualną dla każdej
+          osoby i może dawać różne efekty w zależności od indywidualnych
+          uwarunkowań każdego organizmu.
+        </p>
+        <ul
+          class="flex justify-evenly text-[14px] text-white tracking-[2px] w-full max-w-[900px] text-center"
+        >
+          <li>Regulamin</li>
+          <li>Polityka prywatności</li>
+          <li>Kontakt</li>
+        </ul>
+        <div
+          class="w-full h-[1px] bg-white my-5 opacity-[30%] xl:mx-0 mx-2"
+        ></div>
+        <p class="text-center text-[12px] tracking-[1px]">
+          Copyrights &copy; 2022 <b>COPRESLIN</b>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

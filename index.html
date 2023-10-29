@@ -14,48 +14,100 @@
     <title>Copreslin - Recruitment task</title>
   </head>
   <body>
-    <div class="h-[720px] bg-[#000000] flex items-center flex-col">
-      <nav class="w-[1160px] h-[50px] flex mt-[50px]">
+    <div
+      class="h-[720px] flex items-center flex-col bg-[url('/img/bg-hero.jpg')] object-scale-down bg-center bg-cover"
+    >
+      <nav
+        class="w-full xl:w-[1160px] h-[50px] flex mt-[30px] xl:mt-[50px] items-center"
+      >
         <img
-          class="w-[208px] h-[42px]"
+          src="/img/toggle-btn.png"
+          alt="Hamburger menu"
+          class="block xl:hidden ml-4 hover:cursor-pointer hover:brightness-150 duration-100"
+        />
+        <img
+          class="w-[208px] h-[42px] absolute xl:static left-1/2 transform -translate-x-1/2 xl:left-0 xl:-translate-x-0"
           src="/img/logo.svg"
           alt="Copreslin logo"
         />
-        <ul
-          class="flex justify-between w-full mx-[20px] items-center text-white text-[18px]"
-        >
-          <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
-            COPRESLIN
-          </li>
-          <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
-            BĄDŹ FIT
-          </li>
-          <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
-            JEDYNY TAKI
-          </li>
-          <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
-            WARTO OBSERWOWAĆ
-          </li>
-        </ul>
-        <button
-          class="min-w-[277px] h-full text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] drop-shadow-[0_0px_4px_rgba[255, 245, 235,1] hover:brightness-150 duration-100"
-        >
-          ZAMÓW
-        </button>
+        <div class="hidden xl:flex flex-col xl:flex-row w-full h-full">
+          <ul
+            class="xl:flex justify-between w-full mx-[20px] items-center text-white text-[20px] mt-2"
+          >
+            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+              COPRESLIN
+            </li>
+            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+              BĄDŹ FIT
+            </li>
+            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+              JEDYNY TAKI
+            </li>
+            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+              WARTO OBSERWOWAĆ
+            </li>
+          </ul>
+          <a
+            href="/order.html"
+            class="min-w-[277px] h-full text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] hover:brightness-150 duration-100 drop-shadow-[0_4px_13px_#FF3103B3] flex items-center justify-center"
+          >
+            ZAMÓW
+          </a>
+        </div>
       </nav>
+      <div class="flex items-center w-[1168px]">
+        <div class="flex flex-col w-[810px] -mt-[110px] z-20 ml-[6px]">
+          <h1
+            class="text-[52px] text-[#fff5eb] font-[700] italic leading-[60px] drop-shadow-[0_3px_1px_#000000CC] stroke-[#000000] stroke-[12px]"
+            style="-webkit-text-stroke: 1px black"
+          >
+            DBAJ O FORMĘ W PRZYJMENY SPOSÓB - POSTAW NA NAJNOWSZĄ TECHNOLOGIĘ!
+          </h1>
+          <p
+            class="text-[#fff5eb] text-[36px] max-w-[500px] my-4 drop-shadow-[0_4px_4px_#00000040]"
+          >
+            Nakładki elektostymulujące na mięśnie
+          </p>
+          <p
+            class="text-[#F7A627] text-[32px] font-[700] drop-shadow-[0_4px_4px_#00000040]"
+          >
+            199 zł
+          </p>
+          <a
+            href="/order.html"
+            class="w-[277px] h-[49px] text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] drop-shadow-[0_0px_4px_rgba[255, 245, 235,1] hover:brightness-150 duration-100 mt-2 drop-shadow-[0_4px_13px_#FF3103B3] flex items-center justify-center"
+          >
+            DODAJ DO KOSZYKA
+          </a>
+        </div>
+        <div
+          class="flex w-[570px] h-[693px] mt-[50px] items-end justify-end -ml-[230px]"
+        >
+          <img
+            src="/img/Rectangle 2.png"
+            alt="Obrazek"
+            class="relative w-[550px] h-[663px] z-0 pb-[30px] pr-[30px] z-10"
+          />
+          <div class="w-[410px] h-[514px] bg-[#F7A627] absolute"></div>
+        </div>
+      </div>
     </div>
 
-    <div class="bg-[#FFF4EB] flex flex-col items-center pt-[200px] pb-[100px]">
+    <div
+      class="bg-[#FFF4EB] flex flex-col items-center pt-10 md:pt-[200px] pb-20 md:pb-[100px]"
+    >
       <h2
-        class="text-[48px] w-[720px] text-center font-[700] italic text-[#252525] leading-[50px]"
+        class="text-[32px] md:text-[48px] w-full max-w-[720px] text-center font-[700] italic text-[#252525] leading-[40px] md:leading-[50px] md:uppercase px-2"
       >
-        ZESTAW NAKŁADEK DO EKETROSTYMULACJI MIĘŚNI
-        <span class="text-[#ffae34]">COPRESLIN</span>
+        Zestaw nakładek do elektrostymulacji mięśni
+        <span class="text-[#F7A627] md:uppercase">Copreslin</span>
       </h2>
-      <div class="flex justify-between w-[810px] mt-[60px] mb-[100px]">
+      <div
+        class="flex flex-col sm:flex-row justify-around lg:justify-between w-full max-w-[842px] mt-[40px] md:mt-[60px] mb-[100px] gap-8"
+      >
         <div class="flex flex-col items-center">
           <div
-            class="w-[129px] h-[129px] bg-white flex items-center justify-center rounded-full"
+            class="w-[129px] h-[129px] bg-white flex items-center justify-center rounded-full drop-shadow-[0_4px_4px_#00000040]"
           >
             <img src="/img/Frame 147.svg" alt="Noga" />
           </div>
@@ -63,7 +115,7 @@
         </div>
         <div class="flex flex-col items-center">
           <div
-            class="w-[130px] h-[130px] bg-white flex items-center justify-center rounded-full"
+            class="w-[130px] h-[130px] bg-white flex items-center justify-center rounded-full drop-shadow-[0_4px_4px_#00000040]"
           >
             <img src="/img/FRAME-85x85.svg" alt="Noga" />
           </div>
@@ -71,19 +123,27 @@
         </div>
         <div class="flex flex-col items-center">
           <div
-            class="w-[130px] h-[130px] bg-white flex items-center justify-center rounded-full shadow-md"
+            class="w-[130px] h-[130px] bg-white flex items-center justify-center rounded-full drop-shadow-[0_4px_4px_#00000040]"
           >
             <img src="/img/Frame 146.svg" alt="Noga" />
           </div>
           <p class="text-[24px] text-[#252525] font-[400] mt-4">Nóg</p>
         </div>
       </div>
-      <h2 class="text-[46px] italic font-[700] text-[#252525]">
+      <h2
+        class="text-[26px] md:text-[46px] italic font-[700] text-[#252525] md:drop-shadow-[0_4px_4px_#00000040] text-center px-2"
+      >
         CHCESZ BYĆ FIT?
       </h2>
-      <img src="/img/Vector 3.svg" alt="Piorun" class="mt-2 mb-4" />
-      <div class="w-[950px] text-center text-[#252525]">
-        <p class="text-[18px] leading-[32px] mb-5 shadow-red-500">
+      <img
+        src="/img/Vector 3.svg"
+        alt="Piorun"
+        class="mt-2 mb-4 md:drop-shadow-[0_4px_4px_#00000040]"
+      />
+      <div class="w-full max-w-[950px] text-center text-[#252525]">
+        <p
+          class="text-[18px] leading-[32px] mb-5 shadow-red-500 md:drop-shadow-[0_4px_4px_#00000040] px-3"
+        >
           A kto by nie chciał? W końcu zgrabna i jędrna sylwetka to symbol
           atrakcyjności. A poza tym wiadomo, że w wysportowanym ciele – zdrowy
           duch. Jednak czy aby osiągnąć ten cel trzeba codziennie wylewać siódme
@@ -91,7 +151,9 @@
           zbilansowaną dietę i ruch na świeżym powietrzuadvantages, a trenowanie
           mięśni zostawić nowoczesnej technologii!
         </p>
-        <p class="text-[18px] leading-[32px] mb-5">
+        <p
+          class="text-[18px] leading-[32px] mb-5 md:drop-shadow-[0_4px_4px_#00000040] px-3"
+        >
           Czy to nie genialne, aby mieć swoją prywatną, automatyczną siłownię
           leżąc na kanapie oglądając film, czytając książkę lub odpoczywając w
           ogrodzie? Możesz to mieć. Wypróbuj zestaw nakładek do
@@ -99,7 +161,7 @@
         </p>
       </div>
       <p
-        class="text-[#636363] italic text-[16px] leading-[26px] w-[1050px] text-center"
+        class="text-[#636363] italic text-[16px] leading-[26px] w-full max-w-[1050px] text-center md:drop-shadow-[0_4px_4px_#00000040] px-1"
       >
         *Nie sugeruj się wynikami innych, ponieważ zależą one od indywidualnych
         uwarunkowań, diety i stylu życia. Produkt nie gwarantuje zmiany wagi ani
@@ -107,106 +169,187 @@
       </p>
     </div>
 
-    <div class="bg-[#000000] flex text-white h-[545px]">
-      <div class="flex flex-col w-[570px] justify-center">
-        <h2
-          class="text-[#FFAE34] text-[48px] font-[700] italic leading-[50px] mb-5"
-        >
-          WYPRÓBUJ TEN EFEKT NA SWOIM CIELE
-        </h2>
-        <p class="text-[#EFEFEF] leading-[36px] text-[18px]">
-          Zestaw nakładek do elektrostymulacji mięśni Copreslin to nowoczesne
-          urządzenie, które pomoże Ci trenować mięśnie brzucha, rąk i nóg.
-          Dzięki emitowaniu fal EMS, nakładki pobudzają nerwy – delikatnie, ale
-          skutecznie. Tym samym powodują naprzemienne kurczenie i rozkurczanie
-          mięśni. Dzięki temu sprawdzą się zarówno do treningów redukcyjnych,
-          jak i na rozbudowę mięśni.
-        </p>
+    <div class="bg-[#0F0F0F] flex text-white h-[544px]">
+      <div class="flex flex-row-reverse w-1/2 bg-[#191919] pr-3">
+        <div class="flex flex-col w-[580px] justify-center">
+          <h2
+            class="text-[#F7A627] text-[46px] font-[700] italic leading-[48px] mb-5"
+          >
+            WYPRÓBUJ TEN EFEKT NA SWOIM CIELE
+          </h2>
+          <p class="text-[#EFEFEF] leading-[32px] text-[18px]">
+            Zestaw nakładek do elektrostymulacji mięśni Copreslin to nowoczesne
+            urządzenie, które pomoże Ci trenować mięśnie brzucha, rąk i nóg.
+            Dzięki emitowaniu fal EMS, nakładki pobudzają nerwy – delikatnie,
+            ale skutecznie. Tym samym powodują naprzemienne kurczenie i
+            rozkurczanie mięśni. Dzięki temu sprawdzą się zarówno do treningów
+            redukcyjnych, jak i na rozbudowę mięśni.
+          </p>
+        </div>
       </div>
-      <img src="/img/muscle.jpg" alt="Bicek" />
+      <div class="w-1/2">
+        <img src="/img/muscle.jpg" alt="Bicek" />
+      </div>
     </div>
 
-    <div class="flex flex-col bg-[#]">
-      <h1 class="text-[48px] italic font-[700] leading-[50px] text-center">
+    <div
+      class="flex flex-col bg-[#FFF4EB] items-center pt-[60px] md:pt-[120px] pb-[150px]"
+    >
+      <h1
+        class="text-[32px] md:text-[48px] italic font-[700] md:leading-[50px] text-center text-[#252525] leading-9"
+      >
         ON TRENUJE,<br />
         TY ODPOCZYWASZ!
       </h1>
-      <p class="text-[#FFAE34] text-[36px] font-[700] text-center mt-5">
+      <p
+        class="text-[#F7A627] text-[28px] md:text-[36px] font-[700] text-center mt-5 leading-8"
+      >
         Efektywna elektrostymulacja mięśni
       </p>
-      <div class="">
-        <div>
-          <img src="/img/Rectangle 14.png" alt="Obrazek" />
-          <div class="w-[440px] h-[440px] bg-red"></div>
+      <div class="flex max-w-[1200px] mt-10 text-[#252525]">
+        <div class="flex object-scale-down">
+          <img
+            src="/img/Rectangle 13.png"
+            alt="Obrazek"
+            class="relative z-10 object-scale-down"
+          />
+          <div
+            class="max-w-[443px] max-h-[530px] h-full w-full bg-[#C12300] absolute -ml-[30px] mt-[75px] object-scale-down"
+          ></div>
+        </div>
+        <div
+          class="bg-white min-w-[600px] max-w-[690px] h-[380px] flex flex-col mt-[110px] -ml-[100px] z-10 p-10 drop-shadow-[0_4px_8px_#00000040]"
+        >
+          <h3 class="font-[700] text-[36px] italic text-[#252525] mb-5">
+            SPECYFIKACJA URZĄDZENIA:
+          </h3>
+          <ul class="font-[700] text-[18px] flex flex-col gap-5">
+            <li class="drop-shadow-[0_2px_4px_#00000020]">
+              Programy:
+              <span class="font-[500]">8 trybów, 12 stopni intensywności</span>
+            </li>
+            <li>
+              Wymiary nakładki na brzuch:
+              <span class="font-[500]"> 58 x 20 cm</span>
+            </li>
+            <li>
+              Wymiary opasek:
+              <span class="font-[500]">19 x 6 cm</span>
+            </li>
+            <li>
+              Emitowane fale:
+              <span class="font-[500]">stymulujące oraz rozluźniające</span>
+            </li>
+            <li>
+              Zasilanie:
+              <span class="font-[500]">DC 5V USB</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <div class="flex bg-black h-[535px] items-center relative">
-      <div class="text-white w-[610px]">
-        <h2 class="text-[#ffae34] font-[700] text-[48px] z-10">
-          2 RODZAJE FAL - DLA TRENINGU I REGENERACJI
-        </h2>
-        <p class="text-[18px]">
-          Nakładki do elektrostymulacji Copreslin emitują aż 2 rodzaje fal EMS,
-          dzięki temu możesz korzystać z nich do dwóch celów:
-        </p>
-        <ul class="text-[18px]">
-          <li>
-            fale stymulujące – posłużą Ci do zwiększania wytrzymałości mięśni
-            oraz w celu zwiększenia jędrności ciała,
-          </li>
-          <li>
-            fale rozluźniające – przyniosą ulgę po treningu i pomogą w
-            regeneracji mięśni.
-          </li>
-        </ul>
-        <p class="text-[#B8B8B8]">
-          *Nie sugeruj się wynikami innych, ponieważ zależą one od
-          indywidualnych uwarunkowań, diety i stylu życia. Produkt nie
-          gwarantuje zmiany wagi ani sylwetki.
-        </p>
+    <div class="flex bg-black min-h-[535px] items-center relative">
+      <div class="w-full md:w-1/2 flex flex-row-reverse z-10">
+        <div class="text-white max-w-[670px] w-full -mr-[40px]">
+          <h2
+            class="text-[#F7A627] font-[700] text-[32px] md:text-[48px] z-10 leading-[52px]"
+          >
+            2 RODZAJE FAL - DLA TRENINGU I REGENERACJI
+          </h2>
+          <p class="text-[18px] my-5">
+            Nakładki do elektrostymulacji Copreslin emitują aż 2 rodzaje fal
+            EMS, dzięki temu możesz korzystać z nich do dwóch celów:
+          </p>
+          <ul class="text-[18px]">
+            <li class="mb-5 flex items-start max-w-[650px]">
+              <img src="/img/Ellipse 2.svg" alt="Elipse" class="mt-2 mr-2" />
+              fale stymulujące – posłużą Ci do zwiększania wytrzymałości mięśni
+              oraz w celu zwiększenia jędrności ciała,
+            </li>
+            <li class="mb-5 flex items-start">
+              <img src="/img/Ellipse 2.svg" alt="Elipse" class="mt-2 mr-2" />
+              fale rozluźniające – przyniosą ulgę po treningu i pomogą w
+              regeneracji mięśni.
+            </li>
+          </ul>
+          <p class="text-[#B8B8B8]">
+            *Nie sugeruj się wynikami innych, ponieważ zależą one od
+            indywidualnych uwarunkowań, diety i stylu życia. Produkt nie
+            gwarantuje zmiany wagi ani sylwetki.
+          </p>
+        </div>
       </div>
-      <img src="/img/waves.jpg" alt="waves" class="absolute right-0 z-1" />
+      <div class="absolute right-0">
+        <img
+          src="/img/waves.jpg"
+          alt="Fale"
+          class="h-full min-h-[535px] bg-[left_calc(50%)_top_calc(0%)] object-contain overflow-hidden"
+        />
+      </div>
     </div>
 
-    <div class="bg-[#FFF4EB] inline-block w-full">
-      <div class="flex flex-col bg-white py-10 px-5 max-w-[620px]">
-        <h3 class="italic text-[32px] font-[500] max-w-[450px]">
-          CO JESZCZE ZNAJDZIESZ W ZESTAWIE?
-        </h3>
-        <div class="flex">
-          <img src="/img/Vector 3.svg" alt="" />
-          <p>3 panele sterujące do nakładek elektrostymulujących</p>
+    <div class="bg-[#FFF4EB] w-full py-20 flex justify-center">
+      <div class="flex w-full xl:max-w-[1168px] items-center">
+        <div
+          class="flex flex-col bg-white py-10 px-8 min-w-[690px] z-20 drop-shadow-[0_4px_8px_#00000040] max-h-[460px]"
+        >
+          <h3 class="italic text-[32px] font-[700] max-w-[450px] mb-5">
+            CO JESZCZE ZNAJDZIESZ W ZESTAWIE?
+          </h3>
+          <div class="flex flex-col gap-6 h-[460px]">
+            <div class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <p class="text-[18px]">
+                3 panele sterujące do nakładek elektrostymulujących
+              </p>
+            </div>
+            <div class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <p class="text-[18px]">
+                1 duża 8-punktowa nakładka elektrystymulująca na brzuch
+              </p>
+            </div>
+            <div class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <p class="text-[18px]">
+                2 mniejsze obwodowe opaski elektrostymulujące na ręce oraz nogi
+              </p>
+            </div>
+            <div class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <p class="text-[18px]">Przewód zasilający</p>
+            </div>
+            <div class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <p class="text-[18px]">Instrukcja obsługi</p>
+            </div>
+          </div>
         </div>
-        <div class="flex">
-          <img src="/img/Vector 3.svg" alt="" />
-          <p>1 duża 8-punktowa nakładka elektrystymulująca na brzuch</p>
+        <div class="flex w-[567px] h-[605px] -ml-[80px]">
+          <img
+            src="/img/Rectangle 14.png"
+            alt="Obrazek"
+            class="min-w-[539px] min-h-[575px] z-10 -ml-[30px]"
+          />
+          <div
+            class="w-[443px] h-[530px] bg-[#C12300] absolute ml-[112px] mt-[97px] z-1"
+          ></div>
         </div>
-        <div class="flex">
-          <img src="/img/Vector 3.svg" alt="" />
-          <p>2 mniejsze obwodowe opaski elektrostymulujące na ręce oraz nogi</p>
-        </div>
-        <div class="flex">
-          <img src="/img/Vector 3.svg" alt="" />
-          <p>Przewód zasilający</p>
-        </div>
-        <div class="flex">
-          <img src="/img/Vector 3.svg" alt="" />
-          <p>Instrukcja obsługi</p>
-        </div>
-      </div>
-      <div class="">
-        <img src="/img/Rectangle 14.png" alt="Obrazek" class="relative" />
-        <div class="w-[200px] h-[200px] absolute bg-red bottom-0" />
       </div>
     </div>
 
     <footer
-      class="flex flex-col items-center border-t-[2px] border-[#ffae34] text-white bg-[#191919] py-10"
+      class="flex flex-col items-center border-t-[2px] border-[#F7A627] text-white bg-[#191919] py-10 px-2"
     >
-      <div class="w-[1410px] flex items-center flex-col">
-        <img src="/img/logo.svg" alt="COPRESLIN logo" class="mb-3" />
+      <div class="max-w-[1410px] flex items-center flex-col">
+        <a href="index.html" class="min-w-[208px]">
+          <img
+            class="w-[208px] h-[42px] mb-2"
+            src="/img/logo.svg"
+            alt="Copreslin logo"
+          />
+        </a>
         <p class="text-center italic text-[16px] text-[#8B8B8B] mb-5">
           *Produkt na tej stronie nie ma właściwości leczniczych. Przed użyciem
           należy zapoznać się z instrukcją i stosować urządzenie zgodnie z nią.
@@ -216,14 +359,22 @@
           uwarunkowań każdego organizmu.
         </p>
         <ul
-          class="flex justify-evenly text-[14px] text-white tracking-[2px] w-[900px]"
+          class="flex flex-col sm:flex-row justify-evenly text-[14px] text-white tracking-[2px] w-full max-w-[900px] text-center gap-y-[10px]"
         >
-          <li>Regulamin</li>
-          <li>Polityka prywatności</li>
-          <li>Kontakt</li>
+          <li class="hover:text-[#F7A627] duration-100 cursor-pointer">
+            Regulamin
+          </li>
+          <li class="hover:text-[#F7A627] duration-100 cursor-pointer">
+            Polityka prywatności
+          </li>
+          <li class="hover:text-[#F7A627] duration-100 cursor-pointer">
+            Kontakt
+          </li>
         </ul>
-        <div class="w-full h-[1px] bg-white my-5 opacity-[30%]"></div>
-        <p class="text-center text-[12px] tracking-[1px]">
+        <div
+          class="w-full h-[1px] bg-white my-5 opacity-[30%] xl:mx-0 mx-2"
+        ></div>
+        <p class="text-center text-[12px] tracking-[1px] px-2">
           Copyrights &copy; 2022 <b>COPRESLIN</b>. All rights reserved.
         </p>
       </div>
