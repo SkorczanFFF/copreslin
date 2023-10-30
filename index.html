@@ -17,18 +17,20 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/script.js"></script>
     <title>Copreslin - Recruitment task</title>
   </head>
   <body>
     <div
-      class="h-[720px] flex items-center flex-col bg-[url('/img/bg-hero.jpg')] object-scale-down bg-center bg-cover"
+      class="h-[882px] md:h-[720px] flex items-center flex-col bg-[url('/img/bg-hero-mobile.jpg')] md:bg-[url('/img/bg-hero.jpg')] object-scale-down bg-center bg-cover"
     >
       <nav
-        class="w-full xl:w-[1160px] h-[50px] flex mt-[30px] xl:mt-[50px] items-center"
+        class="w-full xl:w-[1160px] h-[50px] flex mt-[30px] xl:mt-[50px] items-center z-100"
       >
         <img
           src="/img/toggle-btn.png"
           alt="Hamburger menu"
+          id="menu"
           class="block xl:hidden ml-4 hover:cursor-pointer hover:brightness-150 duration-100"
         />
         <img
@@ -36,9 +38,12 @@
           src="/img/logo.svg"
           alt="Copreslin logo"
         />
-        <div class="hidden xl:flex flex-col xl:flex-row w-full h-full">
+        <div
+          class="hidden xl:flex flex-col xl:flex-row w-full h-100 bg-[#2e2d2cE6] xl:bg-transparent absolute xl:static text-center p-10 pt-[220px] xl:p-0 -ml-[52px] xl:ml-0 backdrop-blur-sm"
+          id="menu-items"
+        >
           <ul
-            class="xl:flex justify-between w-full mx-[20px] items-center text-white text-[20px] mt-2"
+            class="flex flex-col xl:flex-row justify-between w-full xl:mx-[20px] items-center text-white text-[20px] mt-2 lg:mb-0 gap-4"
           >
             <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
               COPRESLIN
@@ -49,61 +54,61 @@
             <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
               JEDYNY TAKI
             </li>
-            <li class="hover:text-[#ffae34] duration-100 cursor-pointer">
+            <li
+              class="hover:text-[#ffae34] duration-100 cursor-pointer mb-4 xl:mb-0"
+            >
               WARTO OBSERWOWAĆ
             </li>
           </ul>
           <a
             href="/order.html"
-            class="min-w-[277px] h-full text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] hover:brightness-150 duration-100 drop-shadow-[0_4px_13px_#FF3103B3] flex items-center justify-center"
+            class="min-w-[277px] h-[49px] text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] hover:brightness-150 duration-100 drop-shadow-[0_4px_13px_#FF3103B3] flex items-center justify-center"
           >
             ZAMÓW
           </a>
         </div>
       </nav>
-      <div class="flex items-center w-[1168px]">
-        <div class="flex flex-col w-[810px] -mt-[110px] z-20 ml-[6px]">
+      <div
+        class="flex flex-col lg:flex-row items-center w-full max-w-[1168px] justify-between mt-[159px] md:mt-[160px] lg:mt-0 px-10 xl:px-0"
+      >
+        <div
+          class="flex flex-col w-100 xl:max-w-[810px] -mt-[120px] z-20 justify-center"
+        >
           <h1
-            class="text-[52px] text-[#fff5eb] font-[700] italic leading-[60px] drop-shadow-[0_3px_1px_#000000CC] stroke-[#000000] stroke-[12px]"
-            style="-webkit-text-stroke: 1px black"
+            class="text-[32px] md:text-[42px] lg:text-[52px] text-[#fff5eb] font-[700] italic leading-10 lg:leading-[50px] lg:leading-[60px] drop-shadow-[0_3px_1px_#000000CC] lg:text-start text-center"
           >
             DBAJ O FORMĘ W PRZYJMENY SPOSÓB - POSTAW NA NAJNOWSZĄ TECHNOLOGIĘ!
           </h1>
           <p
-            class="text-[#fff5eb] text-[36px] max-w-[500px] my-4 drop-shadow-[0_4px_4px_#00000040]"
+            class="text-[#fff5eb] text-[24px] lg:text-[36px] w-full lg:w-[500px] my-4 drop-shadow-[0_4px_4px_#00000040] text-center lg:text-start"
           >
             Nakładki elektostymulujące na mięśnie
           </p>
           <p
-            class="text-[#F7A627] text-[32px] font-[700] drop-shadow-[0_4px_4px_#00000040]"
+            class="text-[#F7A627] text-[32px] font-[700] drop-shadow-[0_4px_4px_#00000040] text-center lg:text-start"
           >
             199 zł
           </p>
           <a
             href="/order.html"
-            class="w-[277px] h-[49px] text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] drop-shadow-[0_0px_4px_rgba[255, 245, 235,1] hover:brightness-150 duration-100 mt-2 drop-shadow-[0_4px_13px_#FF3103B3] flex items-center justify-center"
+            class="w-[277px] h-[49px] text-[18px] bg-[#ff2e00] rounded-full stroke-[#901A00] text-[#fff5eb] font-[700] drop-shadow-[0_0px_4px_rgba[255, 245, 235,1] hover:brightness-150 duration-100 mt-2 drop-shadow-[0_4px_13px_#FF3103B3] flex items-center justify-center mx-auto lg:mx-0 mb-[30px]"
           >
             DODAJ DO KOSZYKA
           </a>
         </div>
-        <div
-          class="flex w-[570px] h-[693px] mt-[50px] items-end justify-end -ml-[230px]"
-        >
-          <img
-            src="/img/Rectangle 2.png"
-            alt="Obrazek"
-            class="relative w-[550px] h-[663px] z-0 pb-[30px] pr-[30px] z-10"
-          />
-          <div class="w-[410px] h-[514px] bg-[#F7A627] absolute"></div>
-        </div>
+        <img
+          src="/img/Rectangle 2.png"
+          alt="Obrazek"
+          class="lg:mt-[50px] lg:-ml-[200px] lg:-ml-[300px]"
+        />
       </div>
     </div>
 
     <div
-      class="bg-[#FFF4EB] flex flex-col items-center pt-10 md:pt-[200px] pb-20 md:pb-[100px]"
+      class="bg-[#FFF4EB] flex flex-col items-center pt-5 md:pt-[200px] pb-20 md:pb-[100px]"
     >
       <h2
-        class="text-[32px] md:text-[48px] w-full max-w-[720px] text-center font-[700] italic text-[#252525] leading-[40px] md:leading-[50px] md:uppercase px-2"
+        class="text-[32px] md:text-[48px] w-full max-w-[720px] text-center font-[700] italic text-[#252525] leading-[40px] md:leading-[50px] md:uppercase px-1 mt-5"
       >
         Zestaw nakładek do elektrostymulacji mięśni
         <span class="text-[#F7A627] md:uppercase">Copreslin</span>
@@ -183,7 +188,7 @@
           class="flex flex-col lg:w-[580px] justify-center mx-6 lg:mx-0 pb-10"
         >
           <h2
-            class="text-[#F7A627] text-[26px] md:text-[46px] font-[700] italic leading-[48px] mb-5 text-center lg:text-start pt-[60px]"
+            class="text-[#F7A627] text-[28px] md:text-[46px] font-[700] italic md:leading-[48px] mb-5 text-center lg:text-start pt-[60px] leading-8"
           >
             WYPRÓBUJ TEN EFEKT NA SWOIM CIELE
           </h2>
@@ -209,25 +214,20 @@
       <div
         class="flex w-full lg:w-1/2 bg-black lg:bg-[#0F0F0F] h-100 justify-end sm:justify-center lg:justify-start"
       >
-        <!-- <img
-          src="/img/muscle.jpg"
-          alt="Bicek"
-          class="h-100 w-100 overflow-hidden absolute"
-        /> -->
         <picture>
           <source media="(min-width: 1024px)" srcset="/img/muscle.jpg" />
           <source media="(min-width: 340px)" srcset="/img/muscle-mobile.png" />
           <img
             src="large-image.jpg"
             alt="Bicek"
-            class="h-100 w-100 lg:overflow-hidden lg:absolute"
+            class="h-100 w-100 lg:absolute"
           />
         </picture>
       </div>
     </div>
 
     <div
-      class="flex flex-col bg-[#FFF4EB] items-center pt-[60px] md:pt-[120px] pb-[150px]"
+      class="flex flex-col bg-[#FFF4EB] items-center pt-[60px] md:pt-[120px] pb-[20px] sm:pb-[150px]"
     >
       <h1
         class="text-[32px] md:text-[48px] italic font-[700] md:leading-[50px] text-center text-[#252525] leading-9"
@@ -236,56 +236,79 @@
         TY ODPOCZYWASZ!
       </h1>
       <p
-        class="text-[#F7A627] text-[28px] md:text-[36px] font-[700] text-center mt-5 leading-8"
+        class="text-[#F7A627] text-[28px] md:text-[36px] font-[700] text-center mt-5 leading-8 mx-6 sm:mx-0"
       >
         Efektywna elektrostymulacja mięśni
       </p>
-      <div class="flex max-w-[1200px] mt-10 text-[#252525]">
-        <div class="flex object-scale-down">
-          <img
-            src="/img/Rectangle 13.png"
-            alt="Obrazek"
-            class="relative z-10 object-scale-down"
-          />
-          <div
-            class="max-w-[443px] max-h-[530px] h-full w-full bg-[#C12300] absolute -ml-[30px] mt-[75px] object-scale-down"
-          ></div>
-        </div>
+      <h3
+        class="font-[700] text-[36px] italic text-[#252525] mt-10 leading-10 text-center sm:hidden"
+      >
+        SPECYFIKACJA URZĄDZENIA:
+      </h3>
+      <div
+        class="flex flex-col xl:flex-row w-full max-w-[1168px] mt-6 sm:mt-10 text-[#252525] items-center mx-4 sm:mx-0"
+      >
+        <img
+          src="/img/IMG-1.png"
+          alt="Obrazek"
+          class="md:ml-20 lg:ml-0 px-8 sm:px-0"
+        />
         <div
-          class="bg-white min-w-[600px] max-w-[690px] h-[380px] flex flex-col mt-[110px] -ml-[100px] z-10 p-10 drop-shadow-[0_4px_8px_#00000040]"
+          class="sm:bg-white min-w-[330px] max-w-[690px] h-[380px] md:flex flex-col sm:-ml-20 sm:-mt-[60px] xl:mt-0 xl:-ml-[80px] z-10 p-10 sm:drop-shadow-[0_4px_8px_#00000040] right-0 relative"
         >
-          <h3 class="font-[700] text-[36px] italic text-[#252525] mb-5">
+          <h3
+            class="font-[700] text-[36px] italic text-[#252525] mb-5 leading-10 hidden sm:block"
+          >
             SPECYFIKACJA URZĄDZENIA:
           </h3>
-          <ul class="font-[700] text-[18px] flex flex-col gap-5">
-            <li class="drop-shadow-[0_2px_4px_#00000020]">
-              Programy:
-              <span class="font-[500]">8 trybów, 12 stopni intensywności</span>
+          <ul class="font-[500] text-[18px] flex flex-wrap flex-col gap-5">
+            <li class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <span>
+                Programy:
+                <b class="ml-1">8 trybów, 12 stopni intensywności</b>
+              </span>
             </li>
-            <li>
-              Wymiary nakładki na brzuch:
-              <span class="font-[500]"> 58 x 20 cm</span>
+            <li class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <span>
+                Wymiary nakładki na brzuch:
+                <b class="ml-1"> 58 x 20 cm</b>
+              </span>
             </li>
-            <li>
-              Wymiary opasek:
-              <span class="font-[500]">19 x 6 cm</span>
+            <li class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <span>
+                Wymiary opasek:
+                <b class="ml-1">19 x 6 cm</b>
+              </span>
             </li>
-            <li>
-              Emitowane fale:
-              <span class="font-[500]">stymulujące oraz rozluźniające</span>
+            <li class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <span>
+                Emitowane fale:
+                <b class="ml-1">stymulujące oraz rozluźniające</b>
+              </span>
             </li>
-            <li>
-              Zasilanie:
-              <span class="font-[500]">DC 5V USB</span>
+            <li class="flex">
+              <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
+              <span>
+                Zasilanie:
+                <b class="ml-1">DC 5V USB</b>
+              </span>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="flex bg-black min-h-[535px] items-center relative">
-      <div class="w-full md:w-1/2 flex flex-row-reverse z-10">
-        <div class="text-white max-w-[670px] w-full -mr-[40px]">
+    <div
+      class="flex bg-black h-100 h-full min-h-[535px] items-center relative overflow-hidden"
+    >
+      <div class="lg:w-1/2 flex md:flex-row-reverse z-10">
+        <div
+          class="text-white min-w-[360px] max-w-[670px] -mr-[20px] md:-mr-[60px] xl:-mr-[100px]"
+        >
           <h2
             class="text-[#F7A627] font-[700] text-[32px] md:text-[48px] z-10 leading-[52px]"
           >
@@ -314,24 +337,37 @@
           </p>
         </div>
       </div>
-      <div class="absolute right-0">
-        <img
-          src="/img/waves.jpg"
-          alt="Fale"
-          class="h-full min-h-[535px] bg-[left_calc(50%)_top_calc(0%)] object-contain overflow-hidden"
-        />
+      <div class="absolute right-0 h-100 w-100 object-none">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/waves.jpg" />
+          <source
+            media="(min-width: 340px)"
+            srcset="/img/bg-waves-mobile.png"
+          />
+          <img
+            src="large-image.jpg"
+            alt="Waves"
+            class="h-100 bg-[left_calc(50%)_top_calc(0%)]"
+          />
+        </picture>
       </div>
     </div>
 
-    <div class="bg-[#FFF4EB] w-full py-20 flex justify-center">
-      <div class="flex w-full xl:max-w-[1168px] items-center">
+    <div
+      class="bg-[#FFF4EB] w-full pt-[60px] pb-[30px] sm:py-[100px] flex justify-center"
+    >
+      <div
+        class="flex flex-col-reverse xl:flex-row max-w-[1168px] items-center justify-center"
+      >
         <div
-          class="flex flex-col bg-white py-10 px-8 min-w-[690px] z-20 drop-shadow-[0_4px_8px_#00000040] max-h-[460px]"
+          class="flex flex-col sm:bg-white py-10 px-8 max-w-[690px] z-20 sm:drop-shadow-[0_4px_8px_#00000040] max-h-[460px] sm:-mt-[160px] xl:-mt-0"
         >
-          <h3 class="italic text-[32px] font-[700] max-w-[450px] mb-5">
+          <h3
+            class="italic text-[32px] font-[700] max-w-[450px] mb-5 hidden sm:block"
+          >
             CO JESZCZE ZNAJDZIESZ W ZESTAWIE?
           </h3>
-          <div class="flex flex-col gap-6 h-[460px]">
+          <div class="flex flex-col gap-6 max-h-[460px]">
             <div class="flex">
               <img src="/img/Vector 3.svg" alt="" class="h-7 w-7 mr-2" />
               <p class="text-[18px]">
@@ -360,16 +396,16 @@
             </div>
           </div>
         </div>
-        <div class="flex w-[567px] h-[604px] -ml-[80px]">
-          <img
-            src="/img/Rectangle 14.png"
-            alt="Obrazek"
-            class="max-w-[539px] max-h-[575px] z-10 -ml-[30px]"
-          />
-          <div
-            class="w-[443px] h-[530px] bg-[#C12300] absolute ml-[92px] mt-[67px] z-1"
-          ></div>
-        </div>
+        <img
+          src="/img/IMG-2.png"
+          alt="Obrazek"
+          class="xl:-ml-[90px] px-8 sm:px-0"
+        />
+        <h3
+          class="italic text-[32px] font-[700] max-w-[450px] mb-5 text-center leading-8 sm:hidden mx-4"
+        >
+          CO JESZCZE ZNAJDZIESZ W ZESTAWIE?
+        </h3>
       </div>
     </div>
 
