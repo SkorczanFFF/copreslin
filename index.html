@@ -20,7 +20,7 @@
     <script src="scripts/script.js"></script>
     <title>Copreslin - Recruitment task</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div
       class="h-[882px] md:h-[720px] flex items-center flex-col bg-[url('/img/bg-hero-mobile.jpg')] md:bg-[url('/img/bg-hero.jpg')] object-scale-down bg-center bg-cover"
     >
@@ -39,7 +39,7 @@
           alt="Copreslin logo"
         />
         <div
-          class="hidden xl:flex flex-col xl:flex-row w-full h-100 bg-[#2e2d2cE6] xl:bg-transparent absolute xl:static text-center p-10 pt-[220px] xl:p-0 -ml-[52px] xl:ml-0 backdrop-blur-sm"
+          class="hidden xl:flex flex-col xl:flex-row w-full h-100 bg-[#2e2d2cE6] xl:bg-transparent absolute xl:static text-center p-10 pt-[220px] xl:p-0 -ml-[52px] xl:ml-0 backdrop-blur-sm z-100"
           id="menu-items"
         >
           <ul
@@ -72,7 +72,7 @@
         class="flex flex-col lg:flex-row items-center w-full max-w-[1168px] justify-between mt-[159px] md:mt-[160px] lg:mt-0 px-10 xl:px-0"
       >
         <div
-          class="flex flex-col w-100 xl:max-w-[810px] -mt-[120px] z-20 justify-center"
+          class="flex flex-col w-100 xl:max-w-[810px] -mt-[100px] justify-center"
         >
           <h1
             class="text-[32px] md:text-[42px] lg:text-[52px] text-[#fff5eb] font-[700] italic leading-10 lg:leading-[50px] lg:leading-[60px] drop-shadow-[0_3px_1px_#000000CC] lg:text-start text-center"
@@ -99,7 +99,7 @@
         <img
           src="/img/Rectangle 2.png"
           alt="Obrazek"
-          class="lg:mt-[50px] lg:-ml-[200px] lg:-ml-[300px]"
+          class="lg:mt-[50px] lg:-ml-[200px] lg:-ml-[300px] w-5/6 md:w-1/2 lg:w-auto"
         />
       </div>
     </div>
@@ -220,7 +220,7 @@
           <img
             src="large-image.jpg"
             alt="Bicek"
-            class="h-100 w-100 lg:absolute"
+            class="max-h-100 max-w-100 lg:absolute bg-[left_calc(70%)_top_calc(0%)] object-fit"
           />
         </picture>
       </div>
@@ -305,9 +305,11 @@
     <div
       class="flex bg-black h-100 h-full min-h-[535px] items-center relative overflow-hidden"
     >
-      <div class="lg:w-1/2 flex md:flex-row-reverse z-10">
+      <div
+        class="lg:w-1/2 w-auto flex md:flex-row-reverse z-10 justify-center h-100 py-10 xl:py-0"
+      >
         <div
-          class="text-white min-w-[360px] max-w-[670px] -mr-[20px] md:-mr-[60px] xl:-mr-[100px]"
+          class="text-white min-w-[340px] max-w-[670px] mr-[20px] md:-mr-[60px] xl:-mr-[100px] mx-4 sm:mx-10"
         >
           <h2
             class="text-[#F7A627] font-[700] text-[32px] md:text-[48px] z-10 leading-[52px]"
@@ -337,18 +339,14 @@
           </p>
         </div>
       </div>
-      <div class="absolute right-0 h-100 w-100 object-none">
+      <div class="absolute right-0 h-100 w-100">
         <picture>
           <source media="(min-width: 1200px)" srcset="/img/waves.jpg" />
           <source
             media="(min-width: 340px)"
             srcset="/img/bg-waves-mobile.png"
           />
-          <img
-            src="large-image.jpg"
-            alt="Waves"
-            class="h-100 bg-[left_calc(50%)_top_calc(0%)]"
-          />
+          <img src="large-image.jpg" alt="Waves" class="" />
         </picture>
       </div>
     </div>

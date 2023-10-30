@@ -33,6 +33,6 @@ window.addEventListener("resize", function () {
   if (windowWidth <= 640) {
     element.style.webkitTextStroke = "1px black";
   } else {
-    element.style.webkitTextStroke = "initial"; // Reset to default if viewport width is greater than 640px
+    element.style.webkitTextStroke = "initial";
   }
 });
